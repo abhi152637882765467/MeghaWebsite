@@ -1,0 +1,324 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Default background color */
+    color: #333;
+    overflow: hidden; /* Prevent scrollbars due to floating hearts */
+}
+
+body.about-page {
+    background-color: #ffffff; /* Background color for the About page */
+}
+
+body.inside-heart-page {
+    background-color: #f9f9f9; /* Light background color for the Inside My Heart page */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure header is on top */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    position: relative; /* Ensure correct stacking context for falling hearts */
+}
+.cta-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: block; /* Make sure it's a block-level element to control spacing */
+    position: absolute; /* Position it absolutely within its parent */
+    bottom: 5px; 
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Default background color */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure header is on top */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+
+/* Main Section Styles */
+main {
+    flex: 1; /* Allow main to grow and fill the available space */
+    padding: 20px;
+}
+
+.content {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* Ensure content stays on top of the background */
+    z-index: 1; /* Ensure content is on top */
+}
+
+/* Move "Get in Touch" button to the bottom */
+.cta-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: block; /* Make sure it's a block-level element to control spacing */
+    position: absolute; /* Position it absolutely within its parent */
+    bottom: -100px; /* Adjust spacing from the bottom as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px; /* Adjust to your preference */
+}
+
+textarea {
+    margin-bottom: 40px; /* Move the textarea slightly towards the bottom */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Position footer relative to its container */
+}
+
+
+.throbbing-heart {
+    width: 100px; /* Size of the heart */
+    height: 100px; /* Size of the heart */
+    background-image: url('heart.png'); /* Path to heart image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px auto; /* Center the heart */
+    animation: throbbing 1.5s infinite; /* Apply throbbing animation */
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure content stays on top */
+    z-index: 1; /* Ensure it’s on top of falling hearts */
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin: 0;
+    color: #DA70D6; /* Barbie pink */
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.cta-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Content Section Styles */
+.content {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* To keep content on top of hearts */
+    z-index: 1; /* Ensure content is on top */
+}
+
+.content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Falling Hearts Animation */
+.falling-hearts {
+    position: fixed; /* Ensure hearts cover entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cover the entire viewport width */
+    height: 100vh; /* Cover the entire viewport height */
+    pointer-events: none; /* Allow clicks to pass through */
+    overflow: hidden;
+    z-index: 0; /* Ensure hearts are behind other content */
+}
+
+.heart {
+    position: absolute;
+    width: 80px; /* Increased size of hearts */
+    height: 80px; /* Increased size of hearts */
+    background-image: url('heart.png'); /* Ensure this path is correct */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fall linear infinite;
+    cursor: pointer; /* Make hearts look clickable */
+    pointer-events: auto; /* Ensure hearts can receive pointer events */
+    z-index: 1; /* Ensure hearts are on top of the background */
+}
+@keyframes throbbing {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 1; /* No fade effect at the end */
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px));
+        opacity: 1; /* No fade effect at the end */
+    }
+}
+
+/* Page-Specific Styles */
+.inside-heart-page h1 {
+    font-family: 'Pacifico', cursive;
+    color: #DA70D6; /* Barbie pink */
+}
+
+/* Ensure any other specific styles for the Inside My Heart page */
+.inside-heart-page p {
+    font-size: 1.2em;
+}

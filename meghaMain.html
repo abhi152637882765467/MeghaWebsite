@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin: 0;
+            color: #DA70D6; /* Barbie pink */
+        }
+        .typing-text {
+            font-size: 2em;
+            color: #8B0000; /* Deep red */
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid #8B0000; /* Cursor effect */
+            animation: typing 10s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #8B0000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="meghaMain.html" class="nav-button">Home</a></li>
+                <li><a href="meghaAbout.html" class="nav-button">About</a></li>
+                <li><a href="meghaFeatures.html" class="nav-button">Features</a></li>
+                <li><a href="meghaContact.html" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>My Beautiful Girlfriend</h1>
+            <p class="typing-text">You love means the world to me</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Special Someone. All rights reserved.</p>
+    </footer>
+</body>
+</html>

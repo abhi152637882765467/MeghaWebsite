@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside My Heart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1; /* Allows the container to take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .heart {
+            width: 400px;
+            height: 200px;
+            background-image: url('megha.png'); /* Replace with your heart image path */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 20px auto;
+            animation: throbbing 1.5s infinite;
+        }
+        @keyframes throbbing {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        iframe {
+            border: none;
+            width: 300px; /* Adjust width as needed */
+            height: 400 px; /* Adjust height as needed */
+            margin-top: 400px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inside My Heart</h1>
+        <div class="heart"></div>
+        <!-- Spotify Embed Code -->
+        <iframe src="https://open.spotify.com/embed/track/1VvGJIAjhGdB7InVP9NA7V?autoplay=1" allow="encrypted-media"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2024 Meri Pyaari Megha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
